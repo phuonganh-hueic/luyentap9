@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .star {
+        width: 360px;
+        aspect-ratio: 1;
+        background: #f8ca00;
+        clip-path: polygon(
+          50% 0,
+          calc(50% * (1 + sin(0.4turn))) calc(50% * (1 - cos(0.4turn))),
+          calc(50% * (1 - sin(0.2turn))) calc(50% * (1 - cos(0.2turn))),
+          calc(50% * (1 + sin(0.2turn))) calc(50% * (1 - cos(0.2turn))),
+          calc(50% * (1 - sin(0.4turn))) calc(50% * (1 - cos(0.4turn)))
+        );
+      }
+      .flag {  
+        width: 900px;  
+        height: 600px;  
+        background-color: #e60012;  
+        display: flex;  
+        flex-direction: column;  
+        justify-content: center;  
+        align-items: center;  
+      }  
+      .flag > div {  
+        display: flex;  
+        justify-content: center;  
+        align-items: center;  
+      }  
+      .flag p {  
+        font-size: 60px;  
+        color: white;  
+        margin-top: -90px;  
+      }  
+    </style>
+</head>
+<body>
+    
+    <div class="flag">
+        <p>Việt Nam Quyết thắng</p>
+        <div>
+          <div class="star"></div>
+        </div>
+      </div>
+</body>
+</html>
